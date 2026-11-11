@@ -21,6 +21,10 @@ const movies = [
     {
         title: "미션 임파서블: 폴아웃", year: 2018, date: "2018-07-25",
         rating: 7.4, poster: "/5jnoAA74Qwb5w6B9FMvnc20n6Ie.jpg"
+    },
+    {
+        title: "극장판 바이올렛 에버가든", year: 2020, date: "2020-09-18",
+        rating: 8.3, poster: "/mBUy2lCwk6fpByQ7GBFKRApKEHb.jpg"
     }
 
 ];

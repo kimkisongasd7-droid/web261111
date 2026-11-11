@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <!-- 구글 폰트 <link> 두세 줄을 여기에 붙여 넣기 -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -35,66 +34,24 @@
 
 
     <main>
-        <pre id="out">
-
-        </pre>
+        <div class="toolbar">
+            <p id="count"></p>
+            <label for="sort">정렬</label>
+            <select id="sort" onchange="applySort()">
+                <option value="rating">평점순</option>
+                <option value="year">최신 개봉순</option>
+                <option value="title">제목순</option>
+            </select>
+        </div>
 
         <section class="board" id="board">
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/gDN2NWtHbs8ZWEBQM8Dh5OVXdb4.jpg"
-                    alt="인터스텔라 포스터">
-                <span class="badge">8.4</span>
-                <div class="info">
-                    <h2>인터스텔라</h2>
-                    <p class="year">2014</p>
-                    <p class="overview">세계 각국의 정부와 경제가 완전히 붕괴된 미래가 다가온다.</p>
-                </div>
-            </article>
 
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342//e7ABYg2KnI0QBBYSrLYiTljtmpd.jpg"
-                    alt="미션 임파서블 포스터">
-                <span class="badge">7.0</span>
-                <div class="info">
-                    <h2>미션 임파서블</h2>
-                    <p class="year">1996</p>
-                    <p class="overview">동유럽 첩보원들의 비밀 명단을 훔쳐 무기상에 팔아 넘기려는 음모를 막기 위해 짐 펠프스가 이끄는 CIA 최고의 팀 미션 임파서블이 투입된다.
-                    </p>
-                </div>
-            </article>
 
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342//s2426EIW0arpjN0R0qErJfXQxZD.jpg"
-                    alt="미션 임파서블: 로그네이션">
-                <span class="badge">7.2</span>
-                <div class="info">
-                    <h2>미션 임파서블: 로그네이션</h2>
-                    <p class="year">2015</p>
-                    <p class="overview">미국정부로부터 해체 통보를 받게 된 최첨단 첩보기관 IMF.</p>
-                </div>
-            </article>
 
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/iNJsojTGQoOWL9f9U23jsibONVu.jpg"
-                    alt="미션 임파서블: 파이널 레코닝">
-                <span class="badge">7.2</span>
-                <div class="info">
-                    <h2>미션 임파서블: 파이널 레코닝</h2>
-                    <p class="year">2025</p>
-                    <p class="overview">디지털상의 모든 정보를 통제할 수 있는 사상 초유의 무기로 인해 전 세계 국가와 조직의 기능이 마비되고</p>
-                </div>
-            </article>
 
-            <article class="card">
-                <img class="poster" src="https://image.tmdb.org/t/p/w342/5jnoAA74Qwb5w6B9FMvnc20n6Ie.jpg"
-                    alt="미션 임파서블: 폴아웃">
-                <span class="badge">7.4</span>
-                <div class="info">
-                    <h2>미션 임파서블: 폴아웃</h2>
-                    <p class="year">2018</p>
-                    <p class="overview">에단 헌트는 세계를 위협하는 테러 조직 신디케이트의 수장 솔로몬 레인을 우여곡절 끝에 체포했지만</p>
-                </div>
-            </article>
+            
+
+
         </section>
         <section id="about">
             <h2>이 보드에 대하여</h2>
@@ -115,8 +72,8 @@
 
 
 
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>

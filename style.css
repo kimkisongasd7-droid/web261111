@@ -136,3 +136,7 @@ footer {
         font-size: 3rem;
     }
 }
+
+ .card.hot .badge { background: crimson; color: #fff; }
+
+ .toolbar { display: flex; align-items: center; gap: 12px; color: #fff; }
